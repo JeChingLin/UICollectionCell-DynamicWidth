@@ -13,6 +13,9 @@
 		DE8544EA227494030067E173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8544E9227494030067E173 /* Assets.xcassets */; };
 		DE8544ED227494030067E173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8544EB227494030067E173 /* LaunchScreen.storyboard */; };
 		DE8544F0227494030067E173 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8544EF227494030067E173 /* main.m */; };
+		DE8544F8227494820067E173 /* GHSpecAmountPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8544F7227494820067E173 /* GHSpecAmountPicker.m */; };
+		DE8544FB2274964E0067E173 /* GHSpecItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8544FA2274964E0067E173 /* GHSpecItemCell.m */; };
+		DE8545062276062F0067E173 /* UICollectionViewLeftAlignedLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8545042276062F0067E173 /* UICollectionViewLeftAlignedLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		DE8544EC227494030067E173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE8544EE227494030067E173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE8544EF227494030067E173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE8544F6227494820067E173 /* GHSpecAmountPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHSpecAmountPicker.h; sourceTree = "<group>"; };
+		DE8544F7227494820067E173 /* GHSpecAmountPicker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHSpecAmountPicker.m; sourceTree = "<group>"; };
+		DE8544F92274964E0067E173 /* GHSpecItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHSpecItemCell.h; sourceTree = "<group>"; };
+		DE8544FA2274964E0067E173 /* GHSpecItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHSpecItemCell.m; sourceTree = "<group>"; };
+		DE8545032276062F0067E173 /* UICollectionViewLeftAlignedLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewLeftAlignedLayout.h; sourceTree = "<group>"; };
+		DE8545042276062F0067E173 /* UICollectionViewLeftAlignedLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionViewLeftAlignedLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,11 @@
 				DE8544E1227494010067E173 /* AppDelegate.m */,
 				DE8544E3227494010067E173 /* ViewController.h */,
 				DE8544E4227494010067E173 /* ViewController.m */,
+				DE8544F6227494820067E173 /* GHSpecAmountPicker.h */,
+				DE8544F7227494820067E173 /* GHSpecAmountPicker.m */,
+				DE8544F92274964E0067E173 /* GHSpecItemCell.h */,
+				DE8544FA2274964E0067E173 /* GHSpecItemCell.m */,
+				DE8545022276062F0067E173 /* UICollectionViewLeftAlignedLayout */,
 				DE8544E6227494010067E173 /* Main.storyboard */,
 				DE8544E9227494030067E173 /* Assets.xcassets */,
 				DE8544EB227494030067E173 /* LaunchScreen.storyboard */,
@@ -69,6 +83,15 @@
 				DE8544EF227494030067E173 /* main.m */,
 			);
 			path = DynamicCollectionCell;
+			sourceTree = "<group>";
+		};
+		DE8545022276062F0067E173 /* UICollectionViewLeftAlignedLayout */ = {
+			isa = PBXGroup;
+			children = (
+				DE8545032276062F0067E173 /* UICollectionViewLeftAlignedLayout.h */,
+				DE8545042276062F0067E173 /* UICollectionViewLeftAlignedLayout.m */,
+			);
+			path = UICollectionViewLeftAlignedLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8544FB2274964E0067E173 /* GHSpecItemCell.m in Sources */,
 				DE8544E5227494010067E173 /* ViewController.m in Sources */,
 				DE8544F0227494030067E173 /* main.m in Sources */,
 				DE8544E2227494010067E173 /* AppDelegate.m in Sources */,
+				DE8545062276062F0067E173 /* UICollectionViewLeftAlignedLayout.m in Sources */,
+				DE8544F8227494820067E173 /* GHSpecAmountPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
