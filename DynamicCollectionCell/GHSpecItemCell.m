@@ -17,10 +17,12 @@
     [super awakeFromNib];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectZero];
     label.backgroundColor = [UIColor yellowColor];
+    label.font = [UIFont fontWithName:@"PingFang-TC-Medium" size:14];
+    label.textAlignment = NSTextAlignmentCenter;
     self.layer.borderColor = [UIColor redColor].CGColor;
     self.layer.cornerRadius = 2.0;
     self.layer.borderWidth = 1.0;
-    label.numberOfLines = 2;
+    label.numberOfLines = 1;
     [self.contentView addSubview:label];
     label.translatesAutoresizingMaskIntoConstraints = NO;
     NSLayoutConstraint *top =
@@ -35,6 +37,8 @@
     NSLayoutConstraint *bot =
     [label.bottomAnchor constraintEqualToAnchor:self.contentView.layoutMarginsGuide.bottomAnchor constant:-5];
     [bot setActive:YES];
+    
+    
     _label = label;
 }
 
@@ -46,8 +50,8 @@
 
 - (UICollectionViewLayoutAttributes*)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     CGSize size = [self.contentView systemLayoutSizeFittingSize:layoutAttributes.size];
-    
     NSLog(@"size: %f, %f", size.width, size.height);
+    NSLog(@"screen width: %f", [UIScreen mainScreen].bounds.size.width);
     layoutAttributes.size = size;
     return layoutAttributes;
 }
