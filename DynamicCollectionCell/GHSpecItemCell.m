@@ -48,7 +48,6 @@
 - (void)setText:(NSString *)text {
     _text = text;
     _label.text = text;
-    [self layoutIfNeeded];
 }
 
 - (UICollectionViewLayoutAttributes*)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
