@@ -22,7 +22,7 @@
     // Do any additional setup after loading the view.
     [(UICollectionViewFlowLayout*)self.layout setEstimatedItemSize:UICollectionViewFlowLayoutAutomaticSize];
     [(UICollectionViewFlowLayout*)self.layout setMinimumInteritemSpacing:10];
-    _array = @[@"M", @"L", @"XL", @"BO1234", @"BO4567", @"BO6789", @"TESTTESTTESTTESTTEST", @"BO6789(TestTest)",@"BO6789(TestTest)", @"TESTTESTTESTTESTTEST", @"BO6789(TestTest)",@"BO6789(TestTest)", @"TESTTESTTESTTESTTEST", @"BO6789(TestTest)",@"BO6789(TestTest)", @"M", @"L", @"XL"];
+    _array = @[@"M", @"L", @"XL", @"BO1234", @"BO4567", @"BO6789", @"TESTTESTTESTTESTTEST", @"BO6789(TestTest)",@"BO6789(TestTest)", @"TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST", @"BO6789(TestTest)",@"BO6789(TestTest)", @"TESTTESTTESTTESTTEST", @"BO6789(TestTest)",@"BO6789(TestTest)", @"M", @"L", @"XL"];
 }
 
 - (IBAction)close:(id)sender {
@@ -56,4 +56,5 @@
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
     return 10.0;
 }
+
 @end

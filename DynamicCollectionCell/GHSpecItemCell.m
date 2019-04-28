@@ -38,6 +38,9 @@
     [label.bottomAnchor constraintEqualToAnchor:self.contentView.layoutMarginsGuide.bottomAnchor constant:-5];
     [bot setActive:YES];
     
+    NSLayoutConstraint *width = [NSLayoutConstraint constraintWithItem:label attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationLessThanOrEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:338]; //338 max
+    [width setActive:YES];
+    
     
     _label = label;
 }
@@ -50,8 +53,6 @@
 
 - (UICollectionViewLayoutAttributes*)preferredLayoutAttributesFittingAttributes:(UICollectionViewLayoutAttributes *)layoutAttributes {
     CGSize size = [self.contentView systemLayoutSizeFittingSize:layoutAttributes.size];
-    NSLog(@"size: %f, %f", size.width, size.height);
-    NSLog(@"screen width: %f", [UIScreen mainScreen].bounds.size.width);
     layoutAttributes.size = size;
     return layoutAttributes;
 }
